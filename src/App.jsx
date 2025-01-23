@@ -6,21 +6,24 @@ import { useState } from "react";
 import "./App.css";
 
 export default function App() {
-  const [flashcards, setFlashcards] = useState([]);
-  function createNewFlashcard(question, answer) {
-    //create an empty object
-    const newObject = { question, answer, open: false };
-    //get flashcards add in myQuestion
-    setFlashcards((prevFlashcards) => [...prevFlashcards, newObject]);
-    //get myAnswer from flashcards
-    //pass data to flashcard data component
+  const arr = [
+    { question: "Why?", answer: "Because!" },
+    { question: "Hi", answer: "Hello" },
+  ];
+
+  const [jokes, setJokes] = useState(arr);
+
+  function addJoke(joke) {
+    setJokes([...jokes, joke]);
   }
 
   return (
     <main>
       <Header />
-      <Form setFlashcards={createNewFlashcard} />
-      <Flashcard flashcards={flashcards} />
+      <Form addJoke={addJoke} />
+      {jokes.map((item, index) => (
+        <Flashcard key={index} question={item.question} answer={item.answer} />
+      ))}
       <Footer />
     </main>
   );

@@ -1,11 +1,12 @@
 import "./flashcard.module.css";
 
-function Flashcard() {
+// eslint-disable-next-line react/prop-types
+function Flashcard({ question, answer }) {
   return (
     <button>
       <button>X</button>
-      <h3>❓</h3>
-      <p>Hello</p>
+      <h3>{question}</h3>
+      <p>{answer}</p>
     </button>
   );
 }
