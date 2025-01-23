@@ -1,4 +1,14 @@
-/* Flashcard container */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  width: 100%;
+  max-width: 100%;
+  padding: 20px;
+}
+
 .flashcard {
   width: 250px;
   height: 350px;
@@ -13,7 +23,6 @@
   cursor: pointer;
 }
 
-/* Close button style */
 .closeButton {
   position: absolute;
   top: 10px;
@@ -27,10 +36,9 @@
 }
 
 .closeButton:hover {
-  color: #f44336; /* Red when hovered */
+  color: #f44336;
 }
 
-/* Question (front of the flashcard) */
 .question {
   font-size: 20px;
   font-weight: bold;
@@ -40,22 +48,14 @@
   flex-grow: 1;
 }
 
-/* Answer (back of the flashcard) */
 .content {
   font-size: 16px;
   color: #555;
-  display: none; /* Initially hidden */
   text-align: center;
   flex-grow: 2;
   padding: 10px 0;
 }
 
-/* Show answer when flashcard is hovered */
-.flashcard:hover .content {
-  display: block;
-}
-
-/* Hover effect for the flashcard */
 .flashcard:hover {
-  transform: translateY(-5px); /* Slight lift on hover */
+  transform: translateY(-5px);
 }

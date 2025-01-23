@@ -1,3 +1,41 @@
-footer {
+/* Footer container styling */
+.footer {
+  background-color: #fff;
+  color: #333;
+  padding: 20px 0;
   text-align: center;
+  border-top: 1px solid #ddd;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  font-size: 0.9rem;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.footer p {
+  margin: 0;
+  color: #555;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: bold;
+}
+
+.footer img {
+  vertical-align: middle;
+  margin-left: 8px;
+  height: 18px;
+  width: auto;
+}
+
+/* Responsive design for small screens */
+@media (max-width: 600px) {
+  .footer {
+    padding: 15px 0;
+    font-size: 0.8rem;
+  }
+
+  .footer img {
+    height: 16px;
+  }
 }

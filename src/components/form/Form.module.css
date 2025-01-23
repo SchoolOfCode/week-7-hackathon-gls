@@ -19,6 +19,8 @@ input {
   border: 1px solid #ddd;
   border-radius: 6px;
   font-size: 1rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   color: #333;
   transition: border-color 0.3s ease;
 }
