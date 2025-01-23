@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import flashCardStyles from "./flashcard.module.css";
 
 function Flashcard({ flashcard }) {
