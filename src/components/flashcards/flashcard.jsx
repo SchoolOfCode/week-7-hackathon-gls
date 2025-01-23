@@ -1,11 +1,11 @@
-import "./flashcard.module.css";
+import flashCardStyles from "./flashcard.module.css";
 
-function Flashcard({ flashcards }) {
+function Flashcard({ flashcard }) {
   return (
-    <button>
-      <button>X</button>
-      <h3>{flashcards.question}</h3>
-      <p>{flashcards.answer}</p>
+    <button className={flashCardStyles.flashcard}>
+      <button className={flashCardStyles.closeButton}>X</button>
+      <h3 className={flashCardStyles.question}>{flashcard.question}</h3>
+      <p className={flashCardStyles.content}>{flashcard.answer}</p>
     </button>
   );
 }
