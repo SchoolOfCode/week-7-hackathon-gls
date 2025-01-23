@@ -1,11 +1,11 @@
 import "./flashcard.module.css";
 
-function Flashcard() {
+function Flashcard({ flashcards }) {
   return (
     <button>
       <button>X</button>
-      <h3>❓</h3>
-      <p>Hello</p>
+      <h3>{flashcards.question}</h3>
+      <p>{flashcards.answer}</p>
     </button>
   );
 }
