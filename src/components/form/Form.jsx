@@ -5,10 +5,10 @@ export function Form() {
     <section className={formStyles.section}>
       <form>
         <label>
-          Question: <input name="myInput" />
+          Question: <input name="myQuestion" />
         </label>
         <label>
-          Answer: <input name="myInput" />
+          Answer: <input name="myAnswer" />
         </label>
       </form>
       <button>Submit</button>
