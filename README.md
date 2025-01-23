@@ -1,8 +1,7 @@
-# React + Vite
+# The goal for this project is to design a user-friendly platform where users can dynamically add, view, and interact with flashcards.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Each flashcard holds a question on one side and an answer on the other.
 
-Currently, two official plugins are available:
+## The user should be able to toggle the card to show the question or answer.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## The card should start off showing the question.
