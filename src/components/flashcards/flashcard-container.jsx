@@ -1,9 +1,12 @@
 import Flashcard from "./flashcard";
+import styles from "./flashcard.module.css";
 
-export function FlashCardContainer({ flashcards }) {
+export default function FlashCardContainer({ flashcards }) {
   return (
-    <section>
-      <Flashcard flashcards={flashcards} />
+    <section className={styles.container}>
+      {flashcards.map((flashcard) => (
+        <Flashcard key={flashcard.id} flashcard={flashcard} />
+      ))}
     </section>
   );
 }
