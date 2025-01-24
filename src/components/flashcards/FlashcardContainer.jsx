@@ -1,7 +1,7 @@
-import Flashcard from "./flashcard";
+import Flashcard from "./Flashcard";
 import styles from "./flashcard.module.css";
 
-export default function FlashCardContainer({ flashcards }) {
+function FlashCardContainer({ flashcards }) {
   return (
     <section className={styles.container}>
       {flashcards.map((flashcard) => (
@@ -10,3 +10,5 @@ export default function FlashCardContainer({ flashcards }) {
     </section>
   );
 }
+
+export default FlashCardContainer;
