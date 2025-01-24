@@ -1,6 +1,6 @@
 import headerStyles from "./header.module.css";
 
-export function Header() {
+function Header() {
   return (
     <header className={headerStyles.header}>
       <img src="header-icon.png" alt="header-icon" width={100} />
@@ -14,3 +14,5 @@ export function Header() {
     </header>
   );
 }
+
+export default Header;

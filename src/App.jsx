@@ -1,11 +1,13 @@
-import { Header } from "./components/header/Header";
-import Footer from "./components/footer/Footer";
-import { Form } from "./components/form/Form";
 import { useState } from "react";
-import "./App.css";
-import FlashCardContainer from "./components/flashcards/flashcard-container";
 
-export default function App() {
+import Header from "./components/header/Header";
+import Form from "./components/form/Form";
+import FlashCardContainer from "./components/flashcards/FlashcardContainer";
+import Footer from "./components/footer/Footer";
+
+import "./App.css";
+
+function App() {
   const [flashcards, setFlashcards] = useState([]);
 
   function createNewFlashcard(question, answer) {
@@ -22,3 +24,5 @@ export default function App() {
     </main>
   );
 }
+
+export default App;

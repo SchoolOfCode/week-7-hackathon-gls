@@ -1,6 +1,6 @@
 import footerStyles from "./footer.module.css";
 
-export default function Footer() {
+function Footer() {
   return (
     <footer className={footerStyles.footer}>
       <img alt="react-logo" src="react.svg" width={25} />
@@ -8,3 +8,5 @@ export default function Footer() {
     </footer>
   );
 }
+
+export default Footer;

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import formStyles from "./form.module.css";
 
-export function Form({ setFlashcards }) {
+function Form({ setFlashcards }) {
   const [question, setQuestion] = useState("");
   const [answer, setAnswer] = useState("");
 
@@ -41,3 +41,5 @@ export function Form({ setFlashcards }) {
     </form>
   );
 }
+
+export default Form;

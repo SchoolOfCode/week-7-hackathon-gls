@@ -1,5 +1,5 @@
-import flashCardStyles from "./flashcard.module.css";
 import { useState } from "react";
+import flashCardStyles from "./flashcard.module.css";
 
 function Flashcard({ flashcard }) {
   const [showAnswer, setShowAnswer] = useState(false);
