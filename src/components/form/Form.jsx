@@ -21,7 +21,7 @@ export function Form({ setFlashcards }) {
       <input
         type="text"
         value={question}
-        onChange={function (e) {
+        onChange={(e) => {
           setQuestion(e.target.value);
         }}
         placeholder="Question"
@@ -29,61 +29,15 @@ export function Form({ setFlashcards }) {
       <input
         type="text"
         value={answer}
-        onChange={function (e) {
+        onChange={(e) => {
           setAnswer(e.target.value);
         }}
         placeholder="Answer"
       />
-      <button type="submit">Create Flashcard</button>
+
+      <button className={formStyles.submitButton} type="submit">
+        Create Flashcard
+      </button>
     </form>
   );
 }
-/*createNewFlashcard (question, answer)
-  }
-  return (
-    <section className={formStyles.section}>
-      <form onSubmit={handleSubmit}>
-        <label>
-          Question: <input name="myQuestion" />
-        </label>
-        <label>
-          Answer: <input name="myAnswer" />
-        </label>
-        <button type="submit">Submit</button>
-      </form>
-    </section>
-  );
-}
-
-/*
-1 Set the state of questions
-2 Set the state of answers
-Their purpose is to hold the input
-
-3 Once you press Submit, the input will'be passed to the state (QA) and placeholders
-*/
-
-/*export function Form({ addJoke }) {
-  function handleSubmit(event) {
-    event.preventDefault();
-    const newJoke = {
-      question: event.target.elements.myQuestion.value,
-      answer: event.target.elements.myAnswer.value,
-    };
-    addJoke(newJoke);
-  }
-
-  return (
-    <section className={formStyles.section}>
-      <form onSubmit={handleSubmit}>
-        <label>
-          Question: <input name="myQuestion" />
-        </label>
-        <label>
-          Answer: <input name="myAnswer" />
-        </label>
-        <button type="submit">Submit</button>
-      </form>
-    </section>
-  );
-}*/

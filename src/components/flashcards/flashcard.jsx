@@ -9,14 +9,24 @@ function Flashcard({ flashcard }) {
   }
 
   return (
-    <button className={flashCardStyles.flashcard} onClick={toggleAnswer}>
+    <article
+      className={`
+        ${flashCardStyles.flashcard} 
+        ${showAnswer ? flashCardStyles.active : ""}
+      `}
+      onClick={toggleAnswer}
+    >
       <button className={flashCardStyles.closeButton}>X</button>
       {!showAnswer ? (
-        <h3 className={flashCardStyles.question}>{flashcard.question}</h3>
+        <label>
+          ❓<h1>{flashcard.question}</h1>
+        </label>
       ) : (
-        <p className={flashCardStyles.content}>{flashcard.answer}</p>
+        <label>
+          👀<h1>{flashcard.answer}</h1>
+        </label>
       )}
-    </button>
+    </article>
   );
 }
 

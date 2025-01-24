@@ -1,4 +1,23 @@
-/* Footer container styling */
+
+.footer {
+  width: 100%;
+  /* background-color: #3a3a3a; */
+  background-color: #aea6a62d;
+
+  color: #aea6a6;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem;
+}
+
+.footer h1 {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
 .footer {
   background-color: #fff;
   color: #333;
@@ -28,7 +47,7 @@
   width: auto;
 }
 
-/* Responsive design for small screens */
+
 @media (max-width: 600px) {
   .footer {
     padding: 15px 0;
@@ -38,4 +57,5 @@
   .footer img {
     height: 16px;
   }
+
 }
