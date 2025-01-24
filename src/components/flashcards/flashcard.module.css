@@ -1,5 +1,4 @@
 .container {
-
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   background-color: #3a3a3a;
@@ -24,7 +23,6 @@
   width: 100%;
   max-width: 100%;
   padding: 20px;
-
 }
 
 .flashcard {
@@ -57,10 +55,10 @@
 }
 
 .closeButton {
-  grid-row: 1; /* Place in the first row */
-  grid-column: 1; /* Align in the single column */
-  justify-self: end; /* Align to the right */
-  align-self: start; /* Align to the top */
+  grid-row: 1;
+  grid-column: 1;
+  justify-self: end;
+  align-self: start;
   background: transparent;
   border: none;
   font-size: 1.2rem;
@@ -69,7 +67,6 @@
 }
 
 .closeButton:hover {
-
   color: #f0f0f0;
 }
 
@@ -104,5 +101,4 @@
 
 .flashcard:hover {
   transform: translateY(-5px);
-
 }
