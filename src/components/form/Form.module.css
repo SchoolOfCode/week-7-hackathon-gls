@@ -16,15 +16,9 @@ input {
   border: 1px solid #555;
   border-radius: 5px;
   font-size: 1rem;
-
   background-color: #2e2e2e;
   color: #f0f0f0;
-
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  color: #333;
   transition: border-color 0.3s ease;
-
 }
 
 .submitButton {
@@ -33,23 +27,13 @@ input {
   color: white;
   background-color: #3f8ba0;
   background-color: #08bffcc2;
-
   width: 40%;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-
-  transition: background-color 0.3s;
-
-  transition: background-color 0.3s ease;
-}
-
-button:hover {
-  background-color: lightblue;
-
 }
 
 .submitButton:hover {
-  /* background-color: #08bffcc2; */
   background-color: #3f8ba0;
+  transition: background-color 0.3s ease;
 }

@@ -8,13 +8,28 @@ import Footer from "./components/footer/Footer";
 import "./App.css";
 
 function App() {
-  const [flashcards, setFlashcards] = useState([]);
-
+  const [flashcards, setFlashcards] = useState([
+    {
+      question: "What do you call fake spaghetti?",
+      answer: "An impasta!",
+    },
+    {
+      question: "What do you call cheese that isn’t yours?",
+      answer: "Nacho cheese! 🧀",
+    },
+    {
+      question: "Why did the bicycle fall over?",
+      answer: "Because it was two-tired!",
+    },
+    {
+      question: "What did the ocean say to the beach?",
+      answer: "Nothing, it just waved!",
+    },
+  ]);
   function createNewFlashcard(question, answer) {
     const newObject = { question, answer };
     setFlashcards((prevFlashcards) => [...prevFlashcards, newObject]);
   }
-
   return (
     <main>
       <Header />

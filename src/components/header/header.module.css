@@ -1,28 +1,19 @@
 .header {
   text-align: center;
-  padding: 20px;
-  /* background-color: #3a3a3a; */
+  padding: 1rem;
   background-color: #aea6a62d;
-
   border-radius: 5px;
-}
-
-.header img {
-  max-width: 100%;
-  height: auto;
-  margin-bottom: 20px;
+  min-width: 100%;
 }
 
 .header h1 {
-  font-size: 2rem;
+  font-size: 3rem;
   margin-bottom: 10px;
   color: #e5dbdb;
 }
 
 .header p {
   font-size: 1rem;
-  color: #555;
-  max-width: 800px;
-  margin: 0 auto;
+  color: #aea6a6;
   line-height: 1.6;
 }
