@@ -1,3 +1,24 @@
-header {
+.header {
   text-align: center;
+  padding: 20px;
+  background-color: #3a3a3a;
+  background-color: #aea6a62d;
+
+  border-radius: 5px;
+}
+
+.header img {
+  margin-bottom: 10px;
+}
+
+.header h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #e5dbdb;
+}
+
+.header {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #aea6a6;
 }

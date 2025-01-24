@@ -1,61 +1,40 @@
-/* General form styling */
 form {
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  padding: 30px;
-  width: 100%;
-  max-width: 400px;
-  margin: auto;
-  display: inline-block;
+  display: flex;
   flex-direction: column;
-  gap: 15px;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  background-color: #3a3a3a;
+  border-radius: 5px;
+  padding: 1rem;
 }
 
 input {
-  width: 100%;
-  padding: 12px;
-  margin-bottom: 10px;
-  border: 1px solid #ddd;
-  border-radius: 6px;
+  width: 40%;
+  padding: 10px;
+  border: 1px solid #555;
+  border-radius: 5px;
   font-size: 1rem;
-  color: #333;
-  transition: border-color 0.3s ease;
+  background-color: #2e2e2e;
+  color: #f0f0f0;
 }
 
-input:focus {
-  border-color: #007bff;
-  outline: none;
-}
-
-button {
-  padding: 12px;
-  background-color: #007bff;
+.submitButton {
+  padding: 10px 15px;
+  font-size: 1rem;
   color: white;
+  background-color: #3f8ba0;
+  background-color: #08bffcc2;
+
+  width: 40%;
   border: none;
-  border-radius: 6px;
-  font-size: 1rem;
+  border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s;
 }
 
-button:hover {
-  background-color: #0056b3;
-}
-
-button:disabled {
-  background-color: #ccc;
-  cursor: not-allowed;
-}
-
-/* Responsive design */
-@media (max-width: 600px) {
-  form {
-    padding: 20px;
-  }
-
-  input,
-  button {
-    font-size: 0.9rem;
-  }
+.submitButton:hover {
+  /* background-color: #08bffcc2; */
+  background-color: #3f8ba0;
 }

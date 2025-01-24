@@ -1,61 +1,72 @@
-/* Flashcard container */
-.flashcard {
-  width: 250px;
-  height: 350px;
-  border-radius: 10px;
-  background-color: #f1f1f1;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  display: flex;
-  flex-direction: column;
-  padding: 20px;
-  position: relative;
-  transition: transform 0.3s ease-in-out;
-  cursor: pointer;
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  background-color: #3a3a3a;
+  /* background-color: #aea6a62d; */
+  border-radius: 5px;
+  gap: 1rem;
+  padding: 2rem;
+  justify-items: center;
 }
 
-/* Close button style */
-.closeButton {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  background-color: transparent;
-  border: none;
-  font-size: 40px;
-  color: #333;
+.container label {
+  place-content: center;
+  font-size: 1rem;
+  color: #aea6a6;
+  text-align: center;
+}
+
+.flashcard {
+  width: 20rem;
+  max-width: 100%;
+  padding: 20px;
+  text-align: center;
+  /* background-color: #08bffcc2; */
+  background-color: #3f8ba0;
+  border: 1px solid #555;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
   cursor: pointer;
-  transition: color 0.2s ease;
+  height: 10rem;
+  display: grid;
+  grid-template-rows: auto 1fr 0.25;
+  /* position: relative; */
+}
+
+.flashcard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.7);
+}
+
+.flashcard.active {
+  /* background-color: #938f8f; */
+  /* background-color: #3f8ba0; */
+  background-color: #08bffcc2;
+}
+
+.closeButton {
+  grid-row: 1; /* Place in the first row */
+  grid-column: 1; /* Align in the single column */
+  justify-self: end; /* Align to the right */
+  align-self: start; /* Align to the top */
+  background: transparent;
+  border: none;
+  font-size: 1.2rem;
+  color: #999;
+  cursor: pointer;
 }
 
 .closeButton:hover {
-  color: #f44336; /* Red when hovered */
+  color: #f0f0f0;
 }
 
-/* Question (front of the flashcard) */
-.question {
-  font-size: 20px;
+.flashcard label {
+  font-size: 2rem;
   font-weight: bold;
-  color: #333;
-  margin: 0;
-  text-align: center;
-  flex-grow: 1;
 }
 
-/* Answer (back of the flashcard) */
-.content {
-  font-size: 16px;
-  color: #555;
-  display: none; /* Initially hidden */
-  text-align: center;
-  flex-grow: 2;
-  padding: 10px 0;
-}
-
-/* Show answer when flashcard is hovered */
-.flashcard:hover .content {
-  display: block;
-}
-
-/* Hover effect for the flashcard */
-.flashcard:hover {
-  transform: translateY(-5px); /* Slight lift on hover */
+.flashcard h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
 }
