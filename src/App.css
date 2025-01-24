@@ -3,13 +3,13 @@
   margin: 0;
   padding: 0;
   font-family: "Inter", "Segoe UI", "Open Sans", "Helvetica Neue", sans-serif;
-  scroll-behavior: smooth;
 }
 
 body {
   background-color: #2e2e2e;
   display: flex;
   align-items: center;
+  scroll-behavior: smooth;
   justify-content: center;
 }
 
