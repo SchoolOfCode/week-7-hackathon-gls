@@ -1,4 +1,5 @@
 .container {
+
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   background-color: #3a3a3a;
@@ -14,6 +15,16 @@
   font-size: 1rem;
   color: #aea6a6;
   text-align: center;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  width: 100%;
+  max-width: 100%;
+  padding: 20px;
+
 }
 
 .flashcard {
@@ -58,6 +69,7 @@
 }
 
 .closeButton:hover {
+
   color: #f0f0f0;
 }
 
@@ -69,4 +81,28 @@
 .flashcard h1 {
   font-size: 1.5rem;
   font-weight: bold;
+
+  color: #f44336;
+}
+
+.question {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+  text-align: center;
+  flex-grow: 1;
+}
+
+.content {
+  font-size: 16px;
+  color: #555;
+  text-align: center;
+  flex-grow: 2;
+  padding: 10px 0;
+}
+
+.flashcard:hover {
+  transform: translateY(-5px);
+
 }
