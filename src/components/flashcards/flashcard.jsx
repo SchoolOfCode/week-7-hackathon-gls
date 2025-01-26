@@ -1,33 +1,32 @@
-import { useState } from "react";
 import flashCardStyles from "./flashcard.module.css";
+import { useState } from "react";
 
 function Flashcard({ flashcard }) {
   const [showAnswer, setShowAnswer] = useState(false);
-
   function toggleAnswer(e) {
     setShowAnswer(!showAnswer);
   }
-
   return (
     <article
       className={`
-        ${flashCardStyles.flashcard} 
+        ${flashCardStyles.flashcard}
         ${showAnswer ? flashCardStyles.active : ""}
       `}
       onClick={toggleAnswer}
     >
-      <button className={flashCardStyles.closeButton}>X</button>
       {!showAnswer ? (
-        <label>
-          ❓<h1>{flashcard.question}</h1>
-        </label>
+        <>
+          <span>👀</span>
+          <p>{flashcard.question}</p>
+        </>
       ) : (
-        <label>
-          👀<h1>{flashcard.answer}</h1>
-        </label>
+        <>
+          <span>🤣</span>
+          <p>{flashcard.answer}</p>
+        </>
       )}
     </article>
   );
+  s;
 }
-
 export default Flashcard;
